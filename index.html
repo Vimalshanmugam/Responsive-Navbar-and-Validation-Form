@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Register</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <a href="">Welcome</a>
+       </div>
+       <ul>
+           <li ><a href="">Home</a></li>
+           <li ><a href="">Services</a></li>
+           <li ><a href="">About </a></li>
+           <li ><a href="">Contact</a></li>
+       </ul>
+       <div class="menu">
+           <div class="menu-line"></div>
+           <div class="menu-line"></div>
+           <div class="menu-line"></div>
+       </div>
+   </nav>
+   </body>
+   <script>
+      const menu = document.querySelector('.menu')//first menu button click panna poram
+     const menulist =  document.querySelector('ul')//menu la enna view aaga pothu
+     menu.addEventListener('click',()=>{ //atha click panra apa
+        menulist.classList.toggle('showmenu') //toggle ethuku na oru tym click panra apa display pannaum next tym 
+    })    // panra apa hide aagum ethu add kuda tharam but add oru tym display panita next hide aagathu
+</script>
+<div class="container">
+        <form action="" id="form">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" >
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error"></div>
+            </div> 
+            <div class="input-group"> 
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <div class="error"></div>
+            </div>
+           <a href="index2.html"> <button type="submit">Register</button></a>
+        </form>
+    </div>
+</body>
+</html>
